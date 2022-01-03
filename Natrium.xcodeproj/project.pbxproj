@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68293B0E1C70D3EF00379F16 /* DetailNatrium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68293B0D1C70D3EF00379F16 /* DetailNatrium.swift */; };
+		686996B41C70602100CEE525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686996B31C70602100CEE525 /* AppDelegate.swift */; };
+		686996B61C70602100CEE525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686996B51C70602100CEE525 /* ViewController.swift */; };
+		686996B91C70602100CEE525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686996B71C70602100CEE525 /* Main.storyboard */; };
+		686996BB1C70602100CEE525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 686996BA1C70602100CEE525 /* Assets.xcassets */; };
+		686996BE1C70602100CEE525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686996BC1C70602100CEE525 /* LaunchScreen.storyboard */; };
+		686996C31C70602100CEE525 /* Natrium WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 686996C21C70602100CEE525 /* Natrium WatchKit App.app */; };
+		686996C91C70602100CEE525 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686996C71C70602100CEE525 /* Interface.storyboard */; };
+		686996CB1C70602100CEE525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 686996CA1C70602100CEE525 /* Assets.xcassets */; };
+		686996D21C70602100CEE525 /* Natrium WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 686996D11C70602100CEE525 /* Natrium WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		686996D71C70602100CEE525 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686996D61C70602100CEE525 /* InterfaceController.swift */; };
+		686996D91C70602100CEE525 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686996D81C70602100CEE525 /* ExtensionDelegate.swift */; };
+		686996DB1C70602100CEE525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 686996DA1C70602100CEE525 /* Assets.xcassets */; };
+		686996EB1C70663E00CEE525 /* FENaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686996EA1C70663E00CEE525 /* FENaViewController.swift */; };
+		686996ED1C70665B00CEE525 /* OSMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686996EC1C70665B00CEE525 /* OSMViewController.swift */; };
+		68A92FF61C71F95800741379 /* DetailFENa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A92FF51C71F95800741379 /* DetailFENa.swift */; };
+		68A92FFA1C71F97900741379 /* DetailOSM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A92FF91C71F97900741379 /* DetailOSM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		686996C41C70602100CEE525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 686996A81C70602100CEE525 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 686996C11C70602100CEE525;
+			remoteInfo = "Natrium WatchKit App";
+		};
+		686996D31C70602100CEE525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 686996A81C70602100CEE525 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 686996D01C70602100CEE525;
+			remoteInfo = "Natrium WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		686996E21C70602100CEE525 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				686996D21C70602100CEE525 /* Natrium WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686996E61C70602100CEE525 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				686996C31C70602100CEE525 /* Natrium WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		68293B0D1C70D3EF00379F16 /* DetailNatrium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailNatrium.swift; sourceTree = "<group>"; };
+		686996B01C70602100CEE525 /* Natrium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Natrium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		686996B31C70602100CEE525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		686996B51C70602100CEE525 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		686996B81C70602100CEE525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		686996BA1C70602100CEE525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		686996BD1C70602100CEE525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		686996BF1C70602100CEE525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		686996C21C70602100CEE525 /* Natrium WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Natrium WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		686996C81C70602100CEE525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		686996CA1C70602100CEE525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		686996CC1C70602100CEE525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		686996D11C70602100CEE525 /* Natrium WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Natrium WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		686996D61C70602100CEE525 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		686996D81C70602100CEE525 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		686996DA1C70602100CEE525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		686996DC1C70602100CEE525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		686996EA1C70663E00CEE525 /* FENaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FENaViewController.swift; sourceTree = "<group>"; };
+		686996EC1C70665B00CEE525 /* OSMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMViewController.swift; sourceTree = "<group>"; };
+		68A92FF51C71F95800741379 /* DetailFENa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailFENa.swift; sourceTree = "<group>"; };
+		68A92FF91C71F97900741379 /* DetailOSM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailOSM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		686996AD1C70602100CEE525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686996CE1C70602100CEE525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		686996A71C70602100CEE525 = {
+			isa = PBXGroup;
+			children = (
+				686996B21C70602100CEE525 /* Natrium */,
+				686996C61C70602100CEE525 /* Natrium WatchKit App */,
+				686996D51C70602100CEE525 /* Natrium WatchKit Extension */,
+				686996B11C70602100CEE525 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		686996B11C70602100CEE525 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				686996B01C70602100CEE525 /* Natrium.app */,
+				686996C21C70602100CEE525 /* Natrium WatchKit App.app */,
+				686996D11C70602100CEE525 /* Natrium WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		686996B21C70602100CEE525 /* Natrium */ = {
+			isa = PBXGroup;
+			children = (
+				686996B31C70602100CEE525 /* AppDelegate.swift */,
+				686996B51C70602100CEE525 /* ViewController.swift */,
+				686996B71C70602100CEE525 /* Main.storyboard */,
+				686996BA1C70602100CEE525 /* Assets.xcassets */,
+				686996BC1C70602100CEE525 /* LaunchScreen.storyboard */,
+				686996BF1C70602100CEE525 /* Info.plist */,
+				686996EA1C70663E00CEE525 /* FENaViewController.swift */,
+				686996EC1C70665B00CEE525 /* OSMViewController.swift */,
+			);
+			path = Natrium;
+			sourceTree = "<group>";
+		};
+		686996C61C70602100CEE525 /* Natrium WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				686996C71C70602100CEE525 /* Interface.storyboard */,
+				686996CA1C70602100CEE525 /* Assets.xcassets */,
+				686996CC1C70602100CEE525 /* Info.plist */,
+			);
+			path = "Natrium WatchKit App";
+			sourceTree = "<group>";
+		};
+		686996D51C70602100CEE525 /* Natrium WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				686996D61C70602100CEE525 /* InterfaceController.swift */,
+				686996D81C70602100CEE525 /* ExtensionDelegate.swift */,
+				686996DA1C70602100CEE525 /* Assets.xcassets */,
+				686996DC1C70602100CEE525 /* Info.plist */,
+				68293B0D1C70D3EF00379F16 /* DetailNatrium.swift */,
+				68A92FF51C71F95800741379 /* DetailFENa.swift */,
+				68A92FF91C71F97900741379 /* DetailOSM.swift */,
+			);
+			path = "Natrium WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		686996AF1C70602100CEE525 /* Natrium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 686996E71C70602100CEE525 /* Build configuration list for PBXNativeTarget "Natrium" */;
+			buildPhases = (
+				686996AC1C70602100CEE525 /* Sources */,
+				686996AD1C70602100CEE525 /* Frameworks */,
+				686996AE1C70602100CEE525 /* Resources */,
+				686996E61C70602100CEE525 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				686996C51C70602100CEE525 /* PBXTargetDependency */,
+			);
+			name = Natrium;
+			productName = Natrium;
+			productReference = 686996B01C70602100CEE525 /* Natrium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		686996C11C70602100CEE525 /* Natrium WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 686996E31C70602100CEE525 /* Build configuration list for PBXNativeTarget "Natrium WatchKit App" */;
+			buildPhases = (
+				686996C01C70602100CEE525 /* Resources */,
+				686996E21C70602100CEE525 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				686996D41C70602100CEE525 /* PBXTargetDependency */,
+			);
+			name = "Natrium WatchKit App";
+			productName = "Natrium WatchKit App";
+			productReference = 686996C21C70602100CEE525 /* Natrium WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		686996D01C70602100CEE525 /* Natrium WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 686996DF1C70602100CEE525 /* Build configuration list for PBXNativeTarget "Natrium WatchKit Extension" */;
+			buildPhases = (
+				686996CD1C70602100CEE525 /* Sources */,
+				686996CE1C70602100CEE525 /* Frameworks */,
+				686996CF1C70602100CEE525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Natrium WatchKit Extension";
+			productName = "Natrium WatchKit Extension";
+			productReference = 686996D11C70602100CEE525 /* Natrium WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		686996A81C70602100CEE525 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Matsui Keiji";
+				TargetAttributes = {
+					686996AF1C70602100CEE525 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7GW64MW9FF;
+						LastSwiftMigration = 0910;
+					};
+					686996C11C70602100CEE525 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7GW64MW9FF;
+						LastSwiftMigration = 0800;
+					};
+					686996D01C70602100CEE525 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7GW64MW9FF;
+						LastSwiftMigration = 0910;
+					};
+				};
+			};
+			buildConfigurationList = 686996AB1C70602100CEE525 /* Build configuration list for PBXProject "Natrium" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 686996A71C70602100CEE525;
+			productRefGroup = 686996B11C70602100CEE525 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				686996AF1C70602100CEE525 /* Natrium */,
+				686996C11C70602100CEE525 /* Natrium WatchKit App */,
+				686996D01C70602100CEE525 /* Natrium WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		686996AE1C70602100CEE525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686996BE1C70602100CEE525 /* LaunchScreen.storyboard in Resources */,
+				686996BB1C70602100CEE525 /* Assets.xcassets in Resources */,
+				686996B91C70602100CEE525 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686996C01C70602100CEE525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686996CB1C70602100CEE525 /* Assets.xcassets in Resources */,
+				686996C91C70602100CEE525 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686996CF1C70602100CEE525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686996DB1C70602100CEE525 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		686996AC1C70602100CEE525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686996ED1C70665B00CEE525 /* OSMViewController.swift in Sources */,
+				686996B61C70602100CEE525 /* ViewController.swift in Sources */,
+				686996B41C70602100CEE525 /* AppDelegate.swift in Sources */,
+				686996EB1C70663E00CEE525 /* FENaViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686996CD1C70602100CEE525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686996D91C70602100CEE525 /* ExtensionDelegate.swift in Sources */,
+				68293B0E1C70D3EF00379F16 /* DetailNatrium.swift in Sources */,
+				686996D71C70602100CEE525 /* InterfaceController.swift in Sources */,
+				68A92FFA1C71F97900741379 /* DetailOSM.swift in Sources */,
+				68A92FF61C71F95800741379 /* DetailFENa.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		686996C51C70602100CEE525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 686996C11C70602100CEE525 /* Natrium WatchKit App */;
+			targetProxy = 686996C41C70602100CEE525 /* PBXContainerItemProxy */;
+		};
+		686996D41C70602100CEE525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 686996D01C70602100CEE525 /* Natrium WatchKit Extension */;
+			targetProxy = 686996D31C70602100CEE525 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		686996B71C70602100CEE525 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				686996B81C70602100CEE525 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		686996BC1C70602100CEE525 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				686996BD1C70602100CEE525 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		686996C71C70602100CEE525 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				686996C81C70602100CEE525 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		686996DD1C70602100CEE525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		686996DE1C70602100CEE525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		686996E01C70602100CEE525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Natrium WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Natrium.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		686996E11C70602100CEE525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Natrium WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Natrium.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		686996E41C70602100CEE525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Natrium_WatchKit_Extension;
+				INFOPLIST_FILE = "Natrium WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Natrium.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		686996E51C70602100CEE525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Natrium_WatchKit_Extension;
+				INFOPLIST_FILE = "Natrium WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Natrium.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		686996E81C70602100CEE525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Natrium/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Natrium";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		686996E91C70602100CEE525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Natrium/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Natrium";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		686996AB1C70602100CEE525 /* Build configuration list for PBXProject "Natrium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686996DD1C70602100CEE525 /* Debug */,
+				686996DE1C70602100CEE525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		686996DF1C70602100CEE525 /* Build configuration list for PBXNativeTarget "Natrium WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686996E01C70602100CEE525 /* Debug */,
+				686996E11C70602100CEE525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		686996E31C70602100CEE525 /* Build configuration list for PBXNativeTarget "Natrium WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686996E41C70602100CEE525 /* Debug */,
+				686996E51C70602100CEE525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		686996E71C70602100CEE525 /* Build configuration list for PBXNativeTarget "Natrium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686996E81C70602100CEE525 /* Debug */,
+				686996E91C70602100CEE525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 686996A81C70602100CEE525 /* Project object */;
+}

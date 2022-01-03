@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DgF-Jv-udc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="C85-34-2mK">
+            <objects>
+                <controller title="Home" id="DgF-Jv-udc" customClass="InterfaceController" customModule="Natrium_WatchKit_Extension">
+                    <items>
+                        <button width="1" height="0.33000000000000002" alignment="left" title="sodium content" id="rhp-cN-3k8">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                            <connections>
+                                <segue destination="Oxb-PZ-Wik" kind="push" id="z57-cb-ebx"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.33000000000000002" alignment="left" title="FENa•FEUN" id="6CB-up-j5g">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                            <connections>
+                                <segue destination="Zb7-fz-hmd" kind="push" id="sA6-ZF-Bb4"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.33000000000000002" alignment="left" title="serum osmolality" id="eH2-qi-VFH">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                            <connections>
+                                <segue destination="Vov-tq-sLH" kind="push" id="hwj-3V-Val"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="275" y="390"/>
+        </scene>
+        <!--FENa•FEUN-->
+        <scene sceneID="qHv-Ht-GP9">
+            <objects>
+                <controller identifier="DetailFENa" title="FENa•FEUN" id="Zb7-fz-hmd" customClass="DetailFENa" customModule="Natrium_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.13" alignment="left" id="8jF-b7-d39">
+                            <items>
+                                <label width="0.40000000000000002" height="1" alignment="left" text="U-Na" textAlignment="center" id="Oho-rK-cNN"/>
+                                <picker width="0.59999999999999998" height="1" alignment="left" focusStyle="stack" id="Yv0-qk-FSr">
+                                    <connections>
+                                        <action selector="UrineNatriumChanged:" destination="Zb7-fz-hmd" id="Xpk-MC-hPI"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.13" alignment="left" id="CQa-3o-yqO">
+                            <items>
+                                <label width="0.40000000000000002" height="1" alignment="left" text="S-Na" textAlignment="center" id="kWz-Mq-zqi"/>
+                                <picker width="0.59999999999999998" height="1" alignment="left" focusStyle="stack" id="vD5-Cx-Wlp">
+                                    <connections>
+                                        <action selector="SerumNatriumChanged:" destination="Zb7-fz-hmd" id="Mm5-Iw-Lkz"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.13" alignment="left" id="onD-3m-xnx">
+                            <items>
+                                <label width="0.40000000000000002" height="1" alignment="left" text="UUN" textAlignment="center" id="OVg-Ia-ZK1"/>
+                                <picker width="0.59999999999999998" height="1" alignment="left" focusStyle="stack" id="kLa-TX-LuD">
+                                    <connections>
+                                        <action selector="UrineUNChanged:" destination="Zb7-fz-hmd" id="YBf-6M-iOn"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.13" alignment="left" id="Jbt-FZ-7D1">
+                            <items>
+                                <label width="0.40000000000000002" height="1" alignment="left" text="BUN" textAlignment="center" id="Q48-XS-A9Y"/>
+                                <picker width="0.59999999999999998" height="1" alignment="left" focusStyle="stack" id="Uc7-Nf-jq9">
+                                    <connections>
+                                        <action selector="BUNChanged:" destination="Zb7-fz-hmd" id="3TD-BK-hK8"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.13" alignment="left" id="y21-ma-9Dp">
+                            <items>
+                                <label width="0.40000000000000002" height="1" alignment="left" text="U-Cr" textAlignment="center" id="GO6-W9-DQo"/>
+                                <picker width="0.59999999999999998" height="1" alignment="left" focusStyle="stack" id="ILu-NX-fG0">
+                                    <connections>
+                                        <action selector="UrineCreatinineChanged:" destination="Zb7-fz-hmd" id="SCN-Nb-CP0"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.13" alignment="left" id="oqD-kW-dLB">
+                            <items>
+                                <label width="0.40000000000000002" height="1" alignment="left" text="S-Cr" textAlignment="center" id="L9x-t9-MyM"/>
+                                <picker width="0.59999999999999998" height="1" alignment="left" focusStyle="stack" id="jra-v8-QOd">
+                                    <connections>
+                                        <action selector="SerumCreatinineChanged:" destination="Zb7-fz-hmd" id="GuA-TF-AiL"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.11" alignment="left" id="O38-kH-DyY">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="FENa ---" textAlignment="left" minimumScaleFactor="0.5" id="jme-4I-F04">
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.11" alignment="left" id="YPt-BT-lPL">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="FEUN ---" minimumScaleFactor="0.5" id="wyD-HF-Zv6">
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="BUN" destination="Uc7-Nf-jq9" id="WIo-l0-1eu"/>
+                        <outlet property="FENaLabel" destination="jme-4I-F04" id="Ek4-dm-fHc"/>
+                        <outlet property="FEUNLabel" destination="wyD-HF-Zv6" id="Cxy-Cf-lMj"/>
+                        <outlet property="SerumCreatinine" destination="jra-v8-QOd" id="RHB-Ep-up7"/>
+                        <outlet property="SerumNatrium" destination="vD5-Cx-Wlp" id="XOK-4X-AFh"/>
+                        <outlet property="UrineCreatinine" destination="ILu-NX-fG0" id="mrm-o5-2rD"/>
+                        <outlet property="UrineNatrium" destination="Yv0-qk-FSr" id="uuF-mp-1rR"/>
+                        <outlet property="UrineUN" destination="kLa-TX-LuD" id="VRh-oo-hlc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="275" y="720"/>
+        </scene>
+        <!--osmolality-->
+        <scene sceneID="PtK-Qn-25r">
+            <objects>
+                <controller identifier="DetailOSM" title="osmolality" id="Vov-tq-sLH" customClass="DetailOSM" customModule="Natrium_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="42h-22-UHi">
+                            <items>
+                                <label width="0.40000000000000002" height="1" alignment="left" text="S-Na" textAlignment="center" id="6rx-Tq-8be"/>
+                                <picker width="0.59999999999999998" height="1" alignment="left" focusStyle="stack" id="JrM-Dr-3m8">
+                                    <connections>
+                                        <action selector="NatriumPickerChanged:" destination="Vov-tq-sLH" id="LV4-Qb-fgH"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="TgQ-oo-DV4">
+                            <items>
+                                <label width="0.40000000000000002" height="1" alignment="left" text="BS" textAlignment="center" id="GCm-KK-pDJ"/>
+                                <picker width="0.29999999999999999" height="1" alignment="left" focusStyle="stack" id="QGl-3w-FLI">
+                                    <connections>
+                                        <action selector="BloodSugarUpperPickerChanged:" destination="Vov-tq-sLH" id="uK1-C7-vve"/>
+                                    </connections>
+                                </picker>
+                                <picker width="0.29999999999999999" height="1" alignment="left" focusStyle="stack" id="V0L-9y-ZZJ">
+                                    <connections>
+                                        <action selector="BloodSugarLowerPickerChanged:" destination="Vov-tq-sLH" id="mA2-Jp-Jr1"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="Wly-Zl-ToT">
+                            <items>
+                                <label width="0.40000000000000002" height="1" alignment="left" text="BUN" textAlignment="center" id="CCe-8e-b1x"/>
+                                <picker width="0.59999999999999998" height="1" alignment="left" focusStyle="stack" id="91P-wq-M27">
+                                    <connections>
+                                        <action selector="BUNPickerChanged:" destination="Vov-tq-sLH" id="B2a-PE-Zfc"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="bqq-n4-6wq">
+                            <items>
+                                <label width="1" height="1" alignment="left" text=" ---mOsm" textAlignment="center" id="ZTH-mc-RzJ">
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="Z7E-1h-NVq">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="normal: 270~295" textAlignment="center" id="sqd-34-v88"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="BUNPicker" destination="91P-wq-M27" id="NrJ-HY-TzS"/>
+                        <outlet property="BloodSugarLowerPicker" destination="V0L-9y-ZZJ" id="8xe-3Z-1Fc"/>
+                        <outlet property="BloodSugarUpperPicker" destination="QGl-3w-FLI" id="yxu-bQ-qhd"/>
+                        <outlet property="NatriumPicker" destination="JrM-Dr-3m8" id="j1f-Jt-6c6"/>
+                        <outlet property="OSMLabel" destination="ZTH-mc-RzJ" id="7Vp-CM-3vH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="492" y="720"/>
+        </scene>
+        <!--sodium-->
+        <scene sceneID="8kL-3e-0B7">
+            <objects>
+                <controller identifier="DetailNatrium" title="sodium" id="Oxb-PZ-Wik" customClass="DetailNatrium" customModule="Natrium_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.13" alignment="left" id="vpr-15-IIh">
+                            <items>
+                                <label width="0.5" height="1" alignment="left" text="saline" textAlignment="center" id="QKL-WH-qrZ"/>
+                                <picker width="0.5" height="1" alignment="left" focusStyle="stack" id="O8w-QT-FlX">
+                                    <connections>
+                                        <action selector="NormalSalinePickerChanged:" destination="Oxb-PZ-Wik" id="s9T-Ry-b4g"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.13" alignment="left" id="smw-Ad-exa">
+                            <items>
+                                <label width="0.5" height="1" alignment="left" text="ECF" textAlignment="center" id="BtX-Fi-JgH"/>
+                                <picker width="0.5" height="1" alignment="left" focusStyle="stack" id="7XS-e4-c3n">
+                                    <connections>
+                                        <action selector="ExtraCellularFluidPickerChanged:" destination="Oxb-PZ-Wik" id="jje-zk-Ikp"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.13" alignment="left" id="Vhr-ff-j44">
+                            <items>
+                                <label width="0.5" height="1" alignment="left" text="start fl" textAlignment="center" id="VMu-xd-jlW"/>
+                                <picker width="0.5" height="1" alignment="left" focusStyle="stack" id="Txe-Qk-y5q">
+                                    <connections>
+                                        <action selector="StartFluidPickerChanged:" destination="Oxb-PZ-Wik" id="U8D-BG-L2u"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.13" alignment="left" id="P9o-q6-53s">
+                            <items>
+                                <label width="0.5" height="1" alignment="left" text="mainten" textAlignment="center" id="InZ-kR-9j6"/>
+                                <picker width="0.5" height="1" alignment="left" focusStyle="stack" id="Cqb-NM-z0l">
+                                    <connections>
+                                        <action selector="MaintenanceFluidPickerChanged:" destination="Oxb-PZ-Wik" id="r2I-ZC-Jfx"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.13" alignment="left" id="B91-Sh-wky">
+                            <items>
+                                <label width="0.5" height="1" alignment="left" text="10%NaCl" textAlignment="center" id="vhb-Tk-ipf"/>
+                                <picker width="0.5" height="1" alignment="left" focusStyle="stack" id="j7m-Gw-gRN">
+                                    <connections>
+                                        <action selector="TenpercentPickerChanged:" destination="Oxb-PZ-Wik" id="sER-s8-hV2"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.11" alignment="left" id="Y35-pQ-TLZ">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="Volume ----mL" minimumScaleFactor="0.5" id="C6x-tq-biJ">
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.11" alignment="left" id="YcZ-fI-Teo">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="sodium ---mEq" minimumScaleFactor="0.5" id="N1v-eH-9kE">
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.11" alignment="left" id="1Gi-iq-B1G">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="equivalent ---g salt" minimumScaleFactor="0.5" id="Cy2-Nh-Wbz">
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="ExtraCellularFluidPicker" destination="7XS-e4-c3n" id="Qrz-CV-vD4"/>
+                        <outlet property="MaintenanceFluidPicker" destination="Cqb-NM-z0l" id="pKK-l3-YfZ"/>
+                        <outlet property="NaClContents" destination="Cy2-Nh-Wbz" id="I7W-Nn-jKV"/>
+                        <outlet property="NatriumMeq" destination="N1v-eH-9kE" id="dcj-j6-rib"/>
+                        <outlet property="NormalSalinePicker" destination="O8w-QT-FlX" id="lKB-MW-AKb"/>
+                        <outlet property="StartFluidPicker" destination="Txe-Qk-y5q" id="hqy-rI-dFK"/>
+                        <outlet property="TenpercentPicker" destination="j7m-Gw-gRN" id="LQu-8P-dcP"/>
+                        <outlet property="TotalVolume" destination="C6x-tq-biJ" id="5PL-Ls-lOo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="492" y="390"/>
+        </scene>
+    </scenes>
+</document>
